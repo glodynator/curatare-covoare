@@ -1,0 +1,64 @@
+.contact-page {
+  &__headline {
+    @include font_alegreya_bold();
+    color: #4d4d4d;
+    font-size: 2.25rem;
+    line-height: 1.25;
+    text-rendering: optimizeLegibility;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__map-container {
+    width: 100%;
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__info {
+    padding-bottom: 2rem;
+
+    h4 {
+      @include font_alegreya_bold();
+      color: #4d4d4d;
+      font-size: 1.8rem;
+      line-height: 1.2;
+      text-rendering: optimizeLegibility;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__location {
+    padding-bottom: 1.5rem;
+  }
+
+  &__schedule {
+    @include media-breakpoint-down(md) {
+      padding-bottom: 3rem;
+    }
+
+    h4 {
+      @include font_alegreya_bold();
+      color: #4d4d4d;
+      font-size: 1.8rem;
+      line-height: 1.2;
+      text-rendering: optimizeLegibility;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__program {
+    margin-bottom: 0.5rem;
+
+    td {
+      padding: 0.3rem;
+    }
+
+  }
+
+  .link {
+    border-bottom: 1px solid #4d4d4d;
+  }
+}

@@ -1,0 +1,33 @@
+/*============================
+        HOME PAGE
+==============================*/
+.home-page {
+  &__section {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .swiper-container img {
+      object-fit: cover;
+    }
+
+    iframe {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__section-title {
+    padding-bottom: 20px;
+  }
+
+  &__media {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 15px;
+    }
+  }
+}

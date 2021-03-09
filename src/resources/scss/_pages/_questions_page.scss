@@ -1,0 +1,27 @@
+.questions-page {
+  &__headline {
+    @include font_alegreya_bold();
+    color: #4d4d4d;
+    font-size: 2.25rem;
+    line-height: 1.25;
+    text-rendering: optimizeLegibility;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__faq-list {
+
+  }
+
+  &__faq-item {
+
+  }
+
+  &__faq-question {
+
+  }
+
+  &__faq-answer {
+
+  }
+}

@@ -1,0 +1,65 @@
+//Roboto
+@mixin font_regular() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+@mixin font_light() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+@mixin font_medium() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+@mixin font_bold() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+@mixin font_italic() {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+//Alegreya
+@mixin font_alegreya_regular() {
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+}
+
+@mixin font_alegreya_regular_italic() {
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin font_alegreya_medium() {
+  font-family: 'Alegreya', serif;
+  font-weight: 500;
+}
+
+@mixin font_alegreya_medium_italic() {
+  font-family: 'Alegreya', serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@mixin font_alegreya_bold() {
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+}
+
+@mixin font_alegreya_extra_bold() {
+  font-family: 'Alegreya', serif;
+  font-weight: 800;
+}
+
+@mixin font_alegreya_black() {
+  font-family: 'Alegreya', serif;
+  font-weight: 900;
+}

@@ -1,0 +1,110 @@
+/*============================
+            FOOTER
+==============================*/
+.site-footer {
+  &__wrapper {
+    &--green {
+      background-color: $green;
+    }
+
+    &--white {
+      background-color: $white;
+    }
+
+    &--grey-light {
+      background: $grey_lighter;
+    }
+
+    &--grey-dark {
+      background: $grey_darker;
+    }
+  }
+
+  &__container {
+    display: flex;
+    color: $grey_dark;
+    padding: 50px 0;
+  }
+
+  &__links-section {
+    display: flex;
+    justify-content: center;
+
+    .links {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+
+      .headline {
+        display: block;
+        color: $white;
+        font-size: 1.5rem;
+        cursor: default;
+        border-bottom: 3px solid $green_light;
+        margin-bottom: 2rem;
+        margin-right: auto;
+
+        @include media-breakpoint-down(md) {
+          margin-bottom: 1.5rem;
+        }
+
+        @media screen and (max-width: 371px) {
+          border-bottom: none;
+          text-decoration: underline solid $green_light 3px;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+
+        .button-custom {
+          display: flex;
+          margin: 0.2rem 0;
+        }
+
+        .link {
+          text-transform: none;
+          background: transparent;
+          color: $white;
+          line-height: 1.5;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+
+      &__social {
+        .content {
+          flex-direction: row;
+
+          .icon {
+            margin-right: 20px;
+
+            svg {
+              height: 25px;
+              width: auto;
+            }
+
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+
+        @include media-breakpoint-down(md) {
+          align-items: center;
+
+          .headline {
+            margin-left: auto;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+/*============================
+        MENU
+==============================*/
+.navigation {
+  padding-top: 60px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 70px;
+  }
+
+  @media screen and (max-width: 381px) {
+    padding-top: 100px;
+  }
+
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  .nav-header {
+    &__site-title {
+      color: $green;
+      font-size: 2.25rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 10px 0;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    &__site-subtitle {
+      @include font_light();
+      color: $green;
+      font-size: 0.875rem;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__contact {
+      display: flex;
+      flex-direction: column;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 15px;
+      }
+    }
+
+    &__contact-title {
+      margin-bottom: 20px;
+
+      display: block;
+      color: $grey_darker;
+      border-bottom: 2px solid $green;
+      margin-right: auto;
+      cursor: pointer;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    &__contact-link {
+      display: inline-table;
+      color: $grey_darker;
+      cursor: pointer;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $green;
+  }
+
+  .nav-menu {
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__button {
+      text-transform: none;
+      padding: 10px;
+      display: block;
+      background-color: transparent;
+      margin-top: 0;
+      color: $white;
+      border-radius: 10px;
+
+      &.active {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    &__burger {
+      &--button {
+        background-color: $green;
+        color: $white;
+        max-height: 100%;
+        box-shadow: none;
+
+        &:hover {
+          background-color: $green;
+          color: $white;
+        }
+      }
+    }
+
+    &__search {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 5px;
+      cursor: pointer;
+
+      svg {
+        color: $white;
+      }
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}
+
+#site-nav-menu {
+  .nav-menu__button {
+    &.active {
+      .nav-menu__button--inner {
+        background-color: $green;
+        color: $grey_lighter;
+      }
+    }
+  }
+}

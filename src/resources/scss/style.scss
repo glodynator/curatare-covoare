@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "./_setup/fonts";
+@import "./_setup/variables";
+@import "./_setup/generic";
+
+@import "./_block/form";
+@import "./_block/file_uploader";
+@import "./_block/navigation";
+@import "./_block/side_section";
+@import "./_block/config-menu";
+@import "./_block/article_item";
+@import "./_block/authentication";
+
+@import "_structure/header";
+@import "_structure/footer";
+
+
+@import "_pages/home_page";
+@import "_pages/about_us_page";
+@import "_pages/services_page";
+@import "_pages/add_article_page";
+@import "_pages/articles_page";
+@import "_pages/contact_page";
+@import "_pages/questions_page";
+@import "_pages/gallery_page";
+@import "_pages/add_gallery_image_page";
+

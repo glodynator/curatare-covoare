@@ -1,0 +1,114 @@
+body {
+  @include font_regular();
+}
+
+*, body {
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  &--green {
+    background-color: $green;
+  }
+
+  &--white {
+    background-color: $white;
+  }
+
+  &--grey-light {
+    background: $grey_lighter;
+  }
+
+  &--grey-dark {
+    background: $grey_darker;
+  }
+
+  &__main {
+    &--green {
+      background-color: $green;
+    }
+
+    &--white {
+      background-color: $white;
+    }
+
+    &--grey-light {
+      background: $grey_lighter;
+    }
+
+    &--grey-dark {
+      background: $grey_darker;
+    }
+  }
+
+  &__container {
+    min-height: 75vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: $green_light;
+  }
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: $grey_darker;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid $grey_lighter;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: $grey_lighter;
+}
+
+//Images
+.img_cover {
+  background-size: cover !important;
+}
+
+//Progress
+.progress_circle {
+  text-align: center;
+  margin: 20px 0;
+
+  .circle {
+    color: $green_light;
+  }
+}
+
+.progress {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px 0;
+  justify-content: center;
+}

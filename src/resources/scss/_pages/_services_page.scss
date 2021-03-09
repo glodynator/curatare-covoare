@@ -1,0 +1,123 @@
+.services-page {
+  &__headline {
+    @include font_alegreya_bold();
+    color: #4d4d4d;
+    font-size: 2.5rem;
+    line-height: 1.25;
+    text-rendering: optimizeLegibility;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .service {
+    padding: 3rem 1.2rem;
+
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__title {
+      @include font_alegreya_bold();
+      color: #4d4d4d;
+      font-size: 1.75rem;
+      line-height: 1.25;
+      text-rendering: optimizeLegibility;
+      padding-bottom: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    &__section-title {
+      @include font_alegreya_bold();
+      color: #4d4d4d;
+      font-size: 2rem;
+      line-height: 1.25;
+      text-rendering: optimizeLegibility;
+      padding: 1rem 0 1.5rem;
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    p, li {
+      @include font_alegreya_regular();
+      color: #4d4d4d;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      text-rendering: optimizeLegibility;
+      padding-bottom: 1rem;
+    }
+
+    li {
+      padding-bottom: 0.7rem;
+    }
+
+    .bullet {
+      position: relative;
+      padding-left: 15px;
+      margin-left: 20px;
+
+      &:before {
+        content: '\2022';
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    .dash {
+      position: relative;
+      padding-left: 15px;
+      margin-left: 20px;
+
+      &:before {
+        content: '\2012';
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    .arrow {
+      position: relative;
+      padding-left: 25px;
+
+      &:before {
+        content: '\27A2';
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    .diamond {
+      position: relative;
+      padding-left: 25px;
+
+      &:before {
+        content: '\2756';
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  .service-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+
+    &__button {
+      display: flex;
+      flex: 0 1 100%;
+      justify-content: center;
+      margin: 0;
+      padding: 3px 5px;
+
+      &.active {
+        background-color: $green;
+        border-radius: 3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.config-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: $grey_lighter;
+  border-radius: 5px;
+  max-width: 200px;
+  margin: 0 auto;
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 2.5rem;
+  }
+
+  &__wrapper {
+    display: inline;
+  }
+
+  &__button {
+    display: inline;
+    padding: 0.5rem 1rem;
+    color: $grey_darker;
+    text-align: center;
+    text-shadow: 1px $black;
+
+    &--active {
+      background-color: $green;
+      color: $white;
+
+      &:hover {
+        color: $white;
+        background-color: $green_light;
+      }
+    }
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}

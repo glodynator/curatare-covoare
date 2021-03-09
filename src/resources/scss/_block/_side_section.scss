@@ -1,0 +1,60 @@
+.page-aside {
+  .aside-section {
+    padding-bottom: 2.5rem;
+
+    &__headline {
+      display: table;
+      margin: 0 0 1rem;
+      border-bottom: 2px solid $green_light;
+    }
+
+    p {
+      text-align: left;
+    }
+
+    .email {
+      padding-top: 1.5rem;
+      padding-bottom: 0.8rem;
+    }
+
+    .field_section {
+      align-items: start;
+      padding-top: 1rem;
+
+      h4 {
+        border-bottom: none;
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+
+    input {
+      padding: 0.5rem;
+      background-color: $grey_lighter;
+      border: 1px solid $grey_light;
+    }
+
+    .success {
+      color: $green_light;
+    }
+
+    .fail {
+      color: $red;
+    }
+
+    button {
+      margin-top: 0;
+      padding: 0.8rem;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      cursor: pointer;
+      background-color: $blue_dark;
+      color: white;
+
+      &:hover {
+        opacity: .85;
+      }
+    }
+  }
+}
