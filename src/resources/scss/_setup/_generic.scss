@@ -48,9 +48,25 @@ body {
   }
 }
 
+.page__headline {
+  @include font_alegreya_bold();
+  color: #4d4d4d;
+  font-size: 2.25rem;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.85rem;
+    padding-bottom: 3rem;
+  }
+}
+
 a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
+  font-weight: 500;
 
   &:hover {
     text-decoration: none;

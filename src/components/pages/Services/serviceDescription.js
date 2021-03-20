@@ -17,19 +17,18 @@ const ServiceDescription = () => {
                 <li className='diamond'>Fungicida testata pe:<p className='bullet'>Candida albicans , Aspergillus niger</p></li>
             </ul>
             <p>Stiati ca ?</p>
-            <h6 className='service__section-title'>1.1. ACARIENII</h6>
+            <h6 className='service__section-title'>1.1. Acarienii</h6>
             <ul className='service__list'>
                 <li className='arrow'>Traim cu ei si ii inspiram timp 7-8 ore in timp ce dormim;</li>
                 <li className='arrow'>Traiesc in haine, lenjerii de pat, plapume, paturi, draperii,  se afla intr-un numar foarte mare in perne , saltele, canapele si covoare/mochete;</li>
                 <li className='arrow'>Desi cu o mare parte din acestia putem trai in armonie, totusi, excrementele lor sunt foarte pericoloase in concentratii mari</li>
             </ul>
-            <h6>1.2. Afectiuni provocate de acarieni:</h6>
+            <h6 className='service__section-title'>1.2. Afectiuni provocate de acarieni:</h6>
             <ul>
                 <li className='bullet'>Alergii la acarienii din praful de casa, pacientii prezinta simptome respiratorii si/sau oculare (astm, rinita, rinosinuzita, conjunctivita).</li>
                 <li className='bullet'>Manifestarile variaza in intensitate de la usoare (stranut, rinoree, nas infundat, prurit nazal si ocular, hiperlacrimatie, ochi rosii, edeme palpebrale, etc) pana la manifestari mai severe, de tip astmatic (senzatie de sufocare si de presiune la nivelul toracelui, 6411tuse suparatoare, tuse la efort, respiratie zgomotoasa, suieratoare, oboseala la eforturi usoare, etc).</li>
             </ul>
-            {/*lipseste titlul sectiunii*/}
-            <h6 className='service__section-title'>2.1.</h6>
+            <h6 className='service__section-title'>1.3. Simtome datorate acarienilor</h6>
             <p>Cel mai frecvent pacienti alergici la acarienii din praful de casa vor prezenta simptome respiratorii si/sau oculare (astm, rinita, rinosinuzita, conjunctivita). Manifestarile variaza in intensitate de la usoare (stranut, rinoree, nas infundat, prurit nazal si ocular, hiperlacrimatie, ochi rosii, edeme palpebrale, etc) pana la manifestari mai severe, de tip astmatic (senzatie de sufocare si de presiune la nivelul toracelui, tuse suparatoare, tuse la efort, respiratie zgomotoasa, suieratoare, oboseala la eforturi usoare, etc).</p>
             <p>Utilizăm echipamente și soluții profesionale pentru spălarea țesaturilor, extracția murdăriei, și distrugerea microbilor și mucegaiurilor.</p>
         </section>

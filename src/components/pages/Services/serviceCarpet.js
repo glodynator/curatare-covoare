@@ -39,7 +39,7 @@ const ServiceCarpet = () => {
                 <li className='bullet'><strong>Pseudomonas aeruginosa</strong></li>
                 <li className='bullet'><strong>Aspergillus niger</strong></li>
             </ul>
-            <p>Putem spala covoare de lana, covoare orientale, covoare ?????</p>
+            <p>Putem spala covoare si mochete din: nylon, polipropilena, poliamida, matase, lana si amestecuri, poliester si acrilic. Acestea pot fi cu fir lung  (Shaggy) sau scurt, lipite sau nu de podea.</p>
         </section>
     );
 };

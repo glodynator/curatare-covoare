@@ -4,6 +4,8 @@ import Slider from '../../slider'
 import SideSection from '../SideSection';
 import Articles from '../Articles';
 
+import cleaningVideo from '../../../resources/videos/video-prezentare-curatare.mp4';
+
 export default function Home() {
     return (
         <div className='home-page'>
@@ -14,23 +16,32 @@ export default function Home() {
                             <Slider/>
                         </div>
                         <div className='col-12 col-md-5'>
-                            <p>Curățenie și igienizare la cele mai ridcate standarde. Fie că este vorba de casa ta (canapele, fotolii, saltele, covoare, scaune), mașina ta sau vrei ca angajații tai sa lucreze într-un mediu curat și igienic, noi suntem cea mai bună alegere. Avem o vastă experiență în curățenie iar o imagine face cât o mie de cuvinte.</p>
+                            <p>Sa ne prezentam:<br/><br/>
+                                Echipa S.C. A-Z CLEAN BY NICOLLE S.R.L.  este experta  in servicii de  curatare / spalare / igienizare covoare, mochete si tapiterii (scaune, scaune auto pentru copii, fotolii, canapele,coltare saltele, carucioare copii, saltele copii si  tapiterii auto).<br/>
+                                Scopul nostru este sa fim cei mai buni si ca fiecare client sa fie multumit.<br/>
+                                Acordam o atentie deosebita dezinfectarii obiectelor curatate, fara a neglija insa si aspectul fizic al acestora.
+                            </p>
                         </div>
                     </div>
                     <div className='home-page__section row'>
                         <div className='home-page__media col-12 col-md-7'>
                             <video width="100%" height="auto" controls>
-                                <source src="/videos/cleaning-presentation.mp4" type="video/mp4"/>
+                                <source src={cleaningVideo} type="video/mp4"/>
                             </video>
                         </div>
                         <div className='col-12 col-md-5'>
-                            <p>Am pregătit pentru tine o mică demonstrație cum decurce o parte din procesul de curățenie al unei canapele. În felul acesta îti poți face o idee între cum arată o canapea înainte și după curățare, dar și cată mizerie se poate aduna în țesăturile din obiectele de mobilier fară ca noi să ne dăm seama.</p>
+                            <p>Vrei sa vezi cateva din lucrările noastre?<br/><br/>
+                                Ti-am pregatit un videoclip scurt  pentru ca tu sa  poti vedea rezultatele lucrărilor noastre, dar si cata mizerie se aduna in tapiterii si covoare, fara sa ne dam seama.
+                            </p>
                         </div>
                     </div>
                     <div className='home-page__section row'>
                         <div className='col-12'>
                             <h2 className='home-page__section-title'>Servicii</h2>
-                            <p>Serviciile noastre acoperă o gama variată de obiecte din casa ta, de la locul de muncă sau din grădinițele în care cresc copiii noștri. Pentru casa ta te putem ajuta prin curățarea și igienizarea covoarelor, saltelelor, canapelelor sau a altor obiecte ce conțin țesături. În caz că vrei să asiguri un mediu curat și igienic pentru angajații tăi îți oferim servicii profesionale de curățare a mochetelor și a scaunelor. De asemenea oferim servicii de curățare și igienizare a mochetelor, covoarelor, saltelelor și scaunelor din gradinițe astfel încat copiii sa se poate dezvolta și juca într-un mediu sănătos.</p>
+                            <p>Serviciul nostru se executa  in locatia ta, la: domiciliul tau, birou,  restaurant,  hotel, cresa, gradinita, biserica etc. Comanda minima este de 100 lei in Timisoara.<br/>
+                                Garantia calitatii serviciilor noastre o dovedesc sutele de recenzii de pe pagina noastra de facebook.<br/>
+                                Le poti vedea aici: <a href="https://www.facebook.com/CuratareCovoareTapiterii/reviews/?ref=page_internal">CuratareCovoareTapiterii</a>.
+                            </p>
                         </div>
                     </div>
                     <div className='home-page__section row'>

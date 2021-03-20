@@ -5,7 +5,7 @@ export default function Contact() {
         <section className='contact-page'>
             <div className='row'>
                 <div className='col-12'>
-                    <h2 className='contact-page__headline'>Contact</h2>
+                    <h2 className='contact-page__headline page__headline'>Contact</h2>
                 </div>
             </div>
             <div className='row'>

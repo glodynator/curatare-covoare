@@ -1,12 +1,5 @@
 .services-page {
   &__headline {
-    @include font_alegreya_bold();
-    color: #4d4d4d;
-    font-size: 2.5rem;
-    line-height: 1.25;
-    text-rendering: optimizeLegibility;
-    padding-bottom: 2rem;
-    text-align: center;
   }
 
   .service {
@@ -30,7 +23,17 @@
     &__section-title {
       @include font_alegreya_bold();
       color: #4d4d4d;
-      font-size: 2rem;
+      font-size: 1.75rem;
+      line-height: 1.25;
+      text-rendering: optimizeLegibility;
+      padding: 1rem 0 1.5rem;
+      margin-bottom: 0;
+    }
+
+    .method__title {
+      @include font_alegreya_bold();
+      color: #4d4d4d;
+      font-size: 1.4rem;
       line-height: 1.25;
       text-rendering: optimizeLegibility;
       padding: 1rem 0 1.5rem;
@@ -40,6 +43,10 @@
     ul {
       list-style: none;
       padding-left: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     p, li {
@@ -49,6 +56,10 @@
       line-height: 1.4;
       text-rendering: optimizeLegibility;
       padding-bottom: 1rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
 
     li {
@@ -105,11 +116,12 @@
   .service-menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     padding: 0 20px;
 
     &__button {
       display: flex;
-      flex: 0 1 100%;
+      flex: 0 1 auto;
       justify-content: center;
       margin: 0;
       padding: 3px 5px;

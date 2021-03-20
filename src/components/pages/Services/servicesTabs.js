@@ -17,6 +17,7 @@ import ServiceSofa from './serviceSofa';
 import ServiceMattress from './serviceMattress';
 import ServiceAuto from './serviceAuto';
 import ServiceBabyChair from './serviceBabyChair';
+import ServiceLeather from './serviceLeather';
 
 const StyledMenu = withStyles({
     paper: {
@@ -135,9 +136,14 @@ export default function ServicesTabs() {
             path: 'auto'
         },
         {
-            name: 'Scaune bebe',
+            name: 'Scaune copii',
             component: <ServiceBabyChair/>,
-            path: 'babychairs'
+            path: 'kidschairs'
+        },
+        {
+            name: 'Produse din piele',
+            component: <ServiceLeather/>,
+            path: 'leather'
         },
         {
             name: 'Cum facem',

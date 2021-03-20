@@ -10,8 +10,8 @@ import Button from '@material-ui/core/Button';
 
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import faSearch from '@fortawesome/fontawesome-free-solid/faSearch';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import faSearch from '@fortawesome/fontawesome-free-solid/faSearch';
 
 const StyledMenu = withStyles({
     paper: {

@@ -12,8 +12,12 @@
       height: auto;
     }
 
-    .swiper-container img {
-      object-fit: cover;
+    .swiper-container {
+      background-color: #f2f2f2;
+
+      img {
+        object-fit: cover;
+      }
     }
 
     iframe {
@@ -28,6 +32,10 @@
   &__media {
     @include media-breakpoint-down(sm) {
       margin-bottom: 15px;
+    }
+
+    & > * {
+      box-shadow: 0 0 5px 1px #ccc;
     }
   }
 }

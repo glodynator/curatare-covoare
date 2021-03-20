@@ -105,37 +105,42 @@ export default function GalleryTabs() {
         {
             name: 'Canapele',
             component: 'canapea',
-            path: 'sofas'
+            path: 'canapele'
         },
         {
             name: 'Covoare',
             component: 'covor',
-            path: 'carpets'
+            path: 'covoare'
         },
         {
             name: 'Piele',
             component: 'piele',
-            path: 'leather'
+            path: 'piele'
         },
         {
             name: 'Fotolii',
             component: 'fotoliu',
-            path: 'armchairs'
+            path: 'fotolii'
+        },
+        {
+            name: 'Coltare',
+            component: 'coltar',
+            path: 'coltare'
         },
         {
             name: 'Grădinițe',
             component: 'gradinita',
-            path: 'kindergartens'
+            path: 'gradinite'
         },
         {
             name: 'Saltele',
             component: 'saltea',
-            path: 'mattresses'
+            path: 'saltele'
         },
         {
             name: 'Scaune',
             component: 'scaun',
-            path: 'chairs'
+            path: 'scaune'
         },
         {
             name: 'Auto',

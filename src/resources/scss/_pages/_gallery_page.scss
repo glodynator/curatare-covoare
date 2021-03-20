@@ -1,12 +1,5 @@
 .gallery-page {
   &__headline {
-    @include font_alegreya_bold();
-    color: #4d4d4d;
-    font-size: 2.25rem;
-    line-height: 1.25;
-    text-rendering: optimizeLegibility;
-    padding-bottom: 2rem;
-    text-align: center;
   }
 
   &__wrapper {
@@ -35,9 +28,9 @@
 
     &__container {
       box-shadow: 0 0 10px 3px $grey_light;
-
       position: relative;
       padding-bottom: 100%;
+      overflow: hidden;
 
       img {
         position: absolute;
@@ -46,8 +39,11 @@
         height: 100%;
         width: 100%;
         max-width: 100%;
-        //right: 0;
+        transition: transform 0.2s ease-in-out;
 
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
 
@@ -61,12 +57,13 @@
   .gallery-menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     padding: 0 1.5rem;
     margin-bottom: 2rem;
 
     &__button {
       display: flex;
-      flex: 0 1 100%;
+      flex: 0 1 auto;
       justify-content: center;
       margin: 0;
       padding: 3px 5px;

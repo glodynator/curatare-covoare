@@ -5,7 +5,7 @@ export default function AboutUs() {
         <section className='about-us-page'>
             <div className='row'>
                 <div className='col-12'>
-                    <h2 className='about-us-page__headline'>Povestea mea …poate fi povestea ta</h2>
+                    <h2 className='about-us-page__headline page__headline'>Povestea mea … poate fi povestea ta</h2>
                     <p>Mai intai sa facem cunostinta, multi/e dintre voi ma cunoasteti, numele meu este Nicoleta, desi mi se spune mai mult Nicole sau Nico.</p>
                     <p>Nicoleta fata ce a curatat  si curata canapele, covoare, saltele, scaune, fotolii si tapiterii auto, este absolventa a Facultatii de Stiinte Economice, sunt sigura ca v-ati intrebat multi/e dintre voi : de ce nu lucreaza la un birou?</p>
                     <p>Raspunsul este urmatorul, am lucrat 6-7 ani la birou , ultimul job ca si economista a fost unul mai solicitant pentru mine dar si foarte placut ca am invatat foarte multe lucruri intr-o perioada scurta de timp, dar atunci cand esti solicitat apare stresul. Ce face stresul? Stresul este boala secolului.</p>

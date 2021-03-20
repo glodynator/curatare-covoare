@@ -1,11 +1,13 @@
 import React, { useCallback } from 'react';
-import {Link, useRouteMatch} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Button from '@material-ui/core/Button';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { signOutUser } from '../../../store/actions/user_actions';
+
+import logoImage from "../../../resources/images/cleaning-az-by-nicolle-logo.png";
 
 export default function Header() {
     const dispatch = useDispatch();
@@ -14,7 +16,6 @@ export default function Header() {
         [dispatch]
     );
     const auth = useSelector(state => state.firebase.auth);
-    let { path, url } = useRouteMatch();
     const menuBtns = [
         {
             type: 'link',
@@ -84,7 +85,7 @@ export default function Header() {
                 <nav className='site-header__container row'>
                     <div className='col-6 col-md-6'>
                         <div className='site-header__logo'>
-                            <img src="/images/cleaning_logo.png" alt=""/>
+                            <img src={logoImage} alt=""/>
                         </div>
                     </div>
                     <div className='col-6 col-md-6'>
