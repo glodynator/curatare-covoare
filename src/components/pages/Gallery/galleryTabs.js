@@ -61,7 +61,6 @@ function TabPanel(props) {
 }
 
 function TabButton(props) {
-    console.log('props: ', props);
     let { children, to, className, path, ...other } = props;
     let { galleryId } = useParams();
     let galleryLinkClass = path === galleryId ? `${className} active` : className;

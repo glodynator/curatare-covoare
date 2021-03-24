@@ -8,11 +8,11 @@ export default function NavHeader() {
                 <h5 className='nav-header__site-subtitle'>Curăţenia — temeiul sanătăţii şi oglinda simţirii.</h5>
             </div>
             <div className='nav-header__contact col-12 col-md-6 col-lg-2'>
-                <h4 className='nav-header__contact-title'>Sună acum</h4>
+                <h4 className='nav-header__contact-title'><a href='tel:0785337467'>Sună acum</a></h4>
                 <a className='nav-header__contact-link' href='tel:0785337467'>0785337467</a>
             </div>
             <div className='nav-header__contact col-12 col-md-6 col-lg-4'>
-                <h4 className='nav-header__contact-title'>Intreabă-ne</h4>
+                <h4 className='nav-header__contact-title'><a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/CuratareCovoareTapiterii'>Intreabă-ne</a></h4>
                 <a className='nav-header__contact-link' target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/CuratareCovoareTapiterii'>facebook/CuratareCovoareTapiterii</a>
             </div>
         </div>

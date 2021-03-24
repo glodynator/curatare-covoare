@@ -129,12 +129,8 @@ class Register extends Component {
     if(formIsValid) {
       this.props.registerUser({ email: dataToSubmit.email, password: dataToSubmit.password })
         .then(response => {
-          console.log('props.registerUser -> response: ', response);
-
           this.props.signInUser({ email: dataToSubmit.email, password: dataToSubmit.password })
               .then(userResponse => {
-                console.log('props.signInUser -> userResponse: ', userResponse);
-                console.log('props.signInUser -> userResponse uid: ', userResponse.user.uid);
                 if (userResponse.user.uid) {
                   this.addAccountInfo(userResponse.user.uid, dataToSubmit.email, dataToSubmit.username, dataToSubmit.phone);
                 } else {
@@ -144,7 +140,7 @@ class Register extends Component {
                 }
               })
               .catch(error => {
-                console.log('error signIn -> ', error);
+                console.warn('error signIn -> ', error);
               });
         });
     } else {

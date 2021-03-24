@@ -7,6 +7,7 @@ import FormField from "../utils/formFields";
 
 class Subscribers extends Component {
     state = {
+        subscribers: [],
         success: '',
         formError: false,
         message: '',
@@ -31,13 +32,20 @@ class Subscribers extends Component {
         }
     };
 
+    componentDidMount() {
+        this.props.getSubscribers()
+            .then(response => {
+                this.setState({
+                    subscribers: firestoreLooper(response)
+                })
+            });
+    }
+
     updateForm(element){
         const newFormData = {...this.state.formData};
         const newElement = { ...newFormData[element.id]};
 
         newElement.value = element.event.target.value;
-
-        console.log('newElement: ', newElement);
 
         let validData = validate(newElement);
         newElement.valid = validData[0];
@@ -83,27 +91,40 @@ class Subscribers extends Component {
 
     render() {
         return (
-            <div className='container'>
+            <div className='subscribers-page'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='wrapper form_wrapper'>
                             <h2 className='form_title'>Informare abonați</h2>
-                            { this.state.message === '' ?
-                                <div className='form_container'>
-                                    <form onSubmit={(event) => this.sendEmail(event)}>
-                                        <FormField
-                                            id={'emailContent'}
-                                            formData={this.state.formData.emailContent}
-                                            change={(element)=> this.updateForm(element)}
-                                        />
-                                        <button className='btn btn-outline-success' onClick={(event)=> this.sendEmail(event)}>
-                                            Trimiteți
-                                        </button>
-                                    </form>
-                                </div>
-                                : <p className={this.state.messageType}>{this.state.message}</p>
-                            }
                         </div>
+                    </div>
+                    <div className="col-12 col-lg-8">
+                        { this.state.message === '' ?
+                            <div className='form_container'>
+                                <form onSubmit={(event) => this.sendEmail(event)}>
+                                    <FormField
+                                        id={'emailContent'}
+                                        formData={this.state.formData.emailContent}
+                                        change={(element)=> this.updateForm(element)}
+                                    />
+                                    <button className='btn btn-outline-success' onClick={(event)=> this.sendEmail(event)}>
+                                        Trimiteți
+                                    </button>
+                                </form>
+                            </div>
+                            : <p className={this.state.messageType}>{this.state.message}</p>
+                        }
+                    </div>
+                    <div className="col-12 col-lg-4">
+                        <h4 className="subscribers-page__section-title text-center">Abonati</h4>
+                        { this.state.subscribers.length > 0 ?
+                            <ul>
+                                { this.state.subscribers.map(subscriber =>
+                                    <li>{subscriber.email}</li>
+                                )}
+                            </ul>
+                            : <p>Nu exista persoane inscrise pentru a primi informatii prin email.</p>
+                        }
                     </div>
                 </div>
             </div>

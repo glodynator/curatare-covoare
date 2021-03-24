@@ -7,8 +7,6 @@ const FormField = ({formData, id, changeHandler}) => {
     const renderTemplate = () => {
         let formTemplate = null;
 
-        console.log('input type: ', formData.element);
-
         switch(formData.element){
             case('input'):
                 formTemplate = (

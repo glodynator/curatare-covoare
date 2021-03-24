@@ -55,10 +55,10 @@ class Fileuploader extends Component {
       .child(this.state.name)
       .delete()
       .then(() => {
-        console.log('delete success');
+        console.warn('delete success');
       })
       .catch((error) => {
-        console.log(error);
+        console.warn(error);
       });
 
     this.setState({

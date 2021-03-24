@@ -74,7 +74,7 @@ class AddEditArticle extends Component {
         }
     };
 
-    componentDidMount(){
+    componentDidMount() {
         const articleId = this.props.match.params.id;
 
         if(!articleId) {
@@ -179,11 +179,8 @@ class AddEditArticle extends Component {
 
         dataToSubmit['date'] = new Date(Date.now()).toDateString();
 
-        console.log('form is valid: ', formIsValid);
-
         if(formIsValid){
             if(this.state.formType === 'Editeaza Articol') {
-                console.log('edit Article');
                 this.props.updateArticle(this.state.articleId, dataToSubmit)
                     .then(response => {
                         this.successForm('Articolul a fost modificat cu success!');
@@ -192,7 +189,6 @@ class AddEditArticle extends Component {
                         this.setState({ formError: true })
                     });
             } else {
-                console.log('add Article');
                 this.props.addArticle(dataToSubmit)
                     .then(response => {
                         this.props.history.push('/articles');

@@ -1,0 +1,20 @@
+/*============================
+        SUBSCRIBERS PAGE
+==============================*/
+.subscribers-page {
+  &__section-title {
+    padding-bottom: 10px;
+  }
+
+  .form-control {
+    min-height: 300px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    padding-bottom: 5px;
+  }
+}

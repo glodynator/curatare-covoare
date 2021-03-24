@@ -11,6 +11,8 @@ import firebase from '../../../firebase';
 import { getGalleryImages, deleteGalleryImage } from '../../../store/actions/gallery_actions';
 import { firestoreLooper, reverseArray } from "../../utils/misc";
 
+import noImage from '../../../resources/images/no-image.jpg';
+
 export default function GalleryTab(props) {
     const [isLoading, setIsLoading] = useState(true);
     const [galleryImages, setGalleryImages] = useState([]);
@@ -43,7 +45,7 @@ export default function GalleryTab(props) {
                                 setGalleryImages(reverseArray(images));
                             })
                             .catch(err => {
-                                console.log('image not found');
+                                console.warn('image not found');
                             });
                     }
                 });
@@ -69,22 +71,32 @@ export default function GalleryTab(props) {
                 { galleryImages ?
                     galleryImages.map(image => (
                         <div key={image.id} className='gallery-image col-12 col-md-6 col-lg-4'>
-                            <h3 className='gallery-image__title'>
-                                { galleryImages ?
-                                    <Truncate lines={2} ellipsis='...' width={190}>
-                                        {image.title}
-                                    </Truncate>
-                                    :
-                                    image.title
-                                }
-                            </h3>
+                            { image.title && image.title !== '' ?
+                                <h3 className='gallery-image__title'>
+                                    { galleryImages ?
+                                        <Truncate lines={2} ellipsis='...' width={190}>
+                                            {image.title}
+                                        </Truncate>
+                                        :
+                                        image.title
+                                    }
+                                </h3>
+                                : null
+                            }
                             { !image.imageUrl ?
-                                null
+                                <div className='gallery-image__container'>
+                                    <CardMedia
+                                        component='img'
+                                        alt='Imagine lipsa'
+                                        image={noImage}
+                                        className='image'
+                                    />
+                                </div>
                                 :
                                 <div className='gallery-image__container'>
                                     <CardMedia
                                         component='img'
-                                        alt='Gsllery image'
+                                        alt={`Imagine cu exemplu de curatare ${image.imageUrl}`}
                                         image={image.imageUrl}
                                         className='image'
                                     />
